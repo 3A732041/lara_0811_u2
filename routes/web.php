@@ -31,3 +31,7 @@ Route::get('hello/{name}',function($name){
 Route::get('hello/{name?}',function($name='Everybody'){
     return'Hello,'.$name;
 });
+
+Route::get('test',function(){
+    return '練習三 test';
+});
