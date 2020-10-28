@@ -35,3 +35,7 @@ Route::get('hello/{name?}',function($name='Everybody'){
 Route::get('test',function(){
     return '練習三 test';
 });
+
+Route::get('hello/{name?}', function ($name='Everybody') {
+    return 'Hello, '.$name;
+})->name('hello.index');
