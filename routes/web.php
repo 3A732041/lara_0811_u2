@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::get('/',function(){
     return 'welcome';
@@ -49,3 +49,6 @@ Route::group(['prefix'=>'admin'],function(){
         return 'admin dashboard';
     });
 });
+
+Route::get('/', [HomeController::class, 'index']);
+
